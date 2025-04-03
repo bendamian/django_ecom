@@ -2,10 +2,9 @@ from django.shortcuts import render
 
 from rest_framework.views import APIView
 from rest_framework.response import Response
-#from rest_framework.decorators import api_view
+# from rest_framework.decorators import api_view
 from rest_framework import status
 from django.shortcuts import get_object_or_404
-
 
 
 from .models import Product, Category
@@ -22,7 +21,7 @@ class LatestProductsList(APIView):
         limit = int(request.query_params.get('limit', 4))  # Default to 4
         products = Product.objects.all().order_by('-date_added')[:limit]
         # products = Product.objects.all().order_by('-date_added')[:4]
-      
+
         # Serialize the queryset into JSON
         serializer = ProductSerializer(products, many=True)
 

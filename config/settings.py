@@ -41,10 +41,10 @@ INSTALLED_APPS = [
 ]
 
 # CORS settings – allows frontend apps on different domains to communicate
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:8080",
-]
-
+#CORS_ALLOWED_ORIGINS = [
+#    "http://localhost:5173",
+#]
+CORS_ALLOW_ALL_ORIGINS = True
 # MIDDLEWARE
 # --------------------------------------------------
 MIDDLEWARE = [
