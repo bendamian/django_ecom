@@ -122,7 +122,7 @@ This is the frontend for **GeoShop**, a sleek e-commerce SPA built using Vue.js 
 Make sure Axios is configured to point to your Django backend:
 
 ```js
-axios.defaults.baseURL = 'http://127.0.0.1:8000';
+axios.defaults.baseURL = 'http://exsamplehost:8000';
 ```
 
 You may also want to configure CORS on the Django backend to allow requests from `http://localhost:5173`.
